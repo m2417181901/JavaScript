@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root {
+            display: flex;
+            /* display:table-cell; */
+            justify-content: space-between;
+            width: 9rem;
+            border: 1px solid red;
+        }
+        .root div {
+            background-color: rgb(175, 13, 13);
+            width: 2rem;
+            height: 2rem;
+  
+            color: #fff;
+            text-align: center;
+
+        }
+        .class-1 {
+            order: 2;
+            flex-shrink: 2;
+        }
+        .class-2 {
+            order: 1;
+        }
+        .class-3 {
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="class-1">1</div>
+        <div class="class-2">2</div>
+        <div class="class-3">3</div>
+    </div>
+    <script>
+        // let div = document.querySelector('.class-1')
+        // div.addEventListener('mouseover', function() {
+        //     console.log('11')
+        // })
+        let div2 = document.querySelector('.root')
+        div2.addEventListener('mouseover', function() {
+            console.log('22')
+        })
+    </script>
+</body>
+</html>

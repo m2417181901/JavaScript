@@ -1,0 +1,86 @@
+.arrow-l, 
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 1;
+}
+.arrow-r {
+    right: 0px;
+}
+
+.focus {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    margin: auto;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+.focus::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+/* div {
+    width:2000px;
+    height: 720px;
+    overflow: scroll;
+    position: relative;
+} */
+
+.focus ul {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400%;
+    overflow: hidden;
+}
+.focus ul li {
+    float: left;
+    
+}
+/* img {
+    width: 50%;
+    height: 50%;
+} */
+.focus ol {
+    position: absolute;
+    bottom:100px;
+    left: 200px;
+    list-style: none;
+}
+
+.focus ol li {
+    float: left;
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    right: -4px;
+    top: -2px;
+    margin: 5px;
+    border-radius: 15px;
+    border: 4px solid #fff;
+    z-index: 1;
+}
+
+.current {
+    background-color: #fff;
+}
